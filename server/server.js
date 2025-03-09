@@ -1,6 +1,6 @@
 import express from "express";
-import cors from 'cors';
-import dotenv from 'dotenv';
+import cors from "cors";
+import dotenv from "dotenv";
 import connectDB from "./configs/mongodb.js";
 import { clerkWebhooks } from "./controllers/webhooks.js";
 
@@ -14,28 +14,20 @@ app.use(cors());
 app.use(express.json()); // For parsing JSON bodies
 
 // Connect to MongoDB
-const startServer = async () => {
-    try {
-        await connectDB(); // Wait for MongoDB connection before starting the server
 
-        // Routes
-        app.get('/', (req, res) => {
-            res.send("Hello World");
-        });
+await connectDB(); // Wait for MongoDB connection before starting the server
 
-        app.post('/clerk', clerkWebhooks); // JSON parsing is already handled globally
+// Routes
+app.get("/", (req, res) => {
+  res.send("Hello World");
+});
 
-        // PORT
-        const PORT = process.env.PORT || 5000;
+app.post("/clerk",express.json(),clerkWebhooks); // JSON parsing is already handled globally
 
-        app.listen(PORT, () => {
-            console.log(`Server is running on port ${PORT}`);
-            console.log(`http://localhost:${PORT}`);
-        });
-    } catch (error) {
-        console.error("Failed to start the server:", error);
-    }
-};
+// PORT
+const PORT = process.env.PORT || 5000;
 
-// Start the server
-startServer();
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+  console.log(`http://localhost:${PORT}`);
+});

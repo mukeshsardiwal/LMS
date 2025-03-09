@@ -18,30 +18,30 @@ export const clerkWebhooks = async (req, res) => {
     const { data, type } = req.body;
 
     switch (type) {
-      case "user.created": {
+      case 'user.created': {
         const userData = {
           _id: data.id,
           email: data.email_addresses[0].email_address,
           name: data.first_name + " " + data.last_name,
           imageUrl: data.image_url,
-        };
-        const user = await User.create(userData);
+        }
+        await User.create(userData);
         res.status(201).json({ success: true, message: "User Created Successfully", user });
         break;
       }
 
-      case "user.updated": {
+      case 'user.updated': {
         const userData = {
           email: data.email_addresses[0].email_address,  // Corrected email access
           name: data.first_name + " " + data.last_name,
           imageUrl: data.image_url,
-        };
+        }
         await User.findByIdAndUpdate(data.id, userData);
         res.json({ success: true, message: "User Updated Successfully" });
         break;
       }
 
-      case "user.deleted": {
+      case 'user.deleted': {
         await User.findByIdAndDelete(data.id);
         res.json({ success: true, message: "User Deleted Successfully" });
         break;
