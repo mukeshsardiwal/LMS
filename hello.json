@@ -1,0 +1,71 @@
+{
+    "courseTitle": "Mastering Full Stack Development",
+    "courseDescription": "A comprehensive course covering both frontend and backend technologies.",
+    "courseThumbnail": "https://example.com/course-thumbnail.jpg",
+    "coursePrice": 199.99,
+    "isPublished": true,
+    "discount": 20,
+    "courseContent": [
+        {
+            "chapterId": "ch1",
+            "chapterOrder": 1,
+            "chapterTitle": "Introduction to Full Stack",
+            "chapterContent": [
+                {
+                    "lectureId": "lec1",
+                    "lectureTitle": "Introduction to Web Development",
+                    "lectureDuration": 10,
+                    "lectureUrl": "https://example.com/lecture1",
+                    "isPreviewFree": true,
+                    "lectureOrder": 1
+                },
+                {
+                    "lectureId": "lec2",
+                    "lectureTitle": "Overview of Technologies",
+                    "lectureDuration": 12,
+                    "lectureUrl": "https://example.com/lecture2",
+                    "isPreviewFree": false,
+                    "lectureOrder": 2
+                }
+            ]
+        },
+        {
+            "chapterId": "ch2",
+            "chapterOrder": 2,
+            "chapterTitle": "Frontend Development",
+            "chapterContent": [
+                {
+                    "lectureId": "lec3",
+                    "lectureTitle": "HTML & CSS Basics",
+                    "lectureDuration": 20,
+                    "lectureUrl": "https://example.com/lecture3",
+                    "isPreviewFree": true,
+                    "lectureOrder": 1
+                },
+                {
+                    "lectureId": "lec4",
+                    "lectureTitle": "JavaScript Fundamentals",
+                    "lectureDuration": 25,
+                    "lectureUrl": "https://example.com/lecture4",
+                    "isPreviewFree": false,
+                    "lectureOrder": 2
+                }
+            ]
+        }
+    ],
+    "courseRatings": [
+        {
+            "userId": "user123",
+            "rating": 5
+        },
+        {
+            "userId": "user456",
+            "rating": 4
+        }
+    ],
+    "educator": "educator789",
+    "enrolledStudents": [
+        "student001",
+        "student002"
+    ]
+}

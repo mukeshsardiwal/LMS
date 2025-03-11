@@ -42,9 +42,15 @@ import profile_img from './profile_img.png'
 import profile_img2 from './profile_img2.png'
 import profile_img3 from './profile_img3.png'
 import lesson_icon from './lesson_icon.svg'
+import sentilone_icon from './sentilone_icon.png'
+import appsecures_icon from './appsecures_icon.jpg'
+import blinkit_icon from './blinkit_icon.png'
 
 
 export const assets = {
+    blinkit_icon,
+    appsecures_icon,
+    sentilone_icon,
     logo,
     search_icon,
     sketch,
@@ -132,40 +138,40 @@ export const dummyDashboardData = {
             "courseTitle": "Introduction to JavaScript",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
-                "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
+                "name": "Siya Bansal",
+                "imageUrl": "data:image/jpeg;base64,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"
             }
         },
         {
             "courseTitle": "Advanced Python Programming",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
-                "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
+                "name": "Rajan Saini",
+                "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXEiSLLaJG40PBsWaxwKnsqV_yqUMySWKi5MmPCH29NpU3va_B-iYKeCP97MYhhkNvXb4&usqp=CAU"
             }
         },
         {
             "courseTitle": "Web Development Bootcamp",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
-                "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
+                "name": "Kamal Khasa",
+                "imageUrl": "https://i.pinimg.com/736x/e8/ed/ae/e8edae91d785ced705e03c52e3a1d65b.jpg"
             }
         },
         {
             "courseTitle": "Data Science with Python",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
-                "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
+                "name": "Mehak Choudhary",
+                "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXUHIs0XdoDyaZsIideYPfEYJzgsgnIzDZGA&s"
             }
         },
         {
             "courseTitle": "Cybersecurity Basics",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
-                "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
+                "name": "Mukesh Sardiwal",
+                "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoTb-Uce7XZ85mQz91_xqCVIb28vLtMaJZyg&s"
             }
         }
     ],
@@ -176,17 +182,17 @@ export const dummyStudentEnrolled = [
     {
         "student": {
             "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "name": "GreatStack",
-            "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
-        },
+            "name": "Kamal Khasa",
+            "imageUrl": "https://i.pinimg.com/736x/e8/ed/ae/e8edae91d785ced705e03c52e3a1d65b.jpg"
+                },
         "courseTitle": "Introduction to JavaScript",
         "purchaseDate": "2024-12-20T08:39:55.509Z"
     },
     {
         "student": {
             "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "name": "GreatStack",
-            "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
+            "name": "Manish Saini",
+            "imageUrl": "https://static.vecteezy.com/system/resources/previews/050/063/865/non_2x/zebra-grazes-in-the-meadow-wild-animal-in-nature-photo.jpg"
         },
         "courseTitle": "Introduction to JavaScript",
         "purchaseDate": "2024-12-20T08:59:49.964Z"
@@ -194,8 +200,8 @@ export const dummyStudentEnrolled = [
     {
         "student": {
             "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "name": "GreatStack",
-            "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
+            "name": "Kartikey Sharma",
+            "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAEBQMGAAIHAQj/xAA4EAACAQMDAgUCBAUDBAMAAAABAgMABBEFEiExQQYTIlFhFHEygaGxByNCkfAWwdEzQ1LxFYLh/8QAGQEAAwEBAQAAAAAAAAAAAAAAAgMEAQAF/8QAJBEAAgICAgIDAAMBAAAAAAAAAAECEQMhEjETQQQiUVJhcRT/2gAMAwEAAhEDEQA/AB5o2x6KENmGfc5waNs7uOX09T8Vrc58wAYrrQfoikl+jtyxbNUPXtUe8kZN3HxVz1/02BA9q5rKSZT966T0dZGOwqZByK92LtyOtYgJOAM0ALGMN1sj2V5D6pC4OPmg39A9XFeichMDgVigDQwe5Ac7mLkdMmjLbVJAMKvJ6mq6rFnySaPtplUjNKnjQEkxnJckHzBwacaHq8rfyp0BB6Gq3I4bkVrFdzLKBFgUpw1oyDZfJ9NiuJY5Cq4z2NNGitLZIwigEkDIqs2V/P5abypP2pha38ct4sUw5PQmvPnGTZUki5XETNbqYMdO1Y1oZ7by2bGRSnVNSeytFaEb+OgpLF4muXU7/wCWR0FA4zrQzkkaeKvDMkSCYTO65ztNVjUbUIqsq4x7CrnNrX19o8UhJbGBzVN1SWeEvGy5X3p/x+fTESSb0K5LkByNo4rKXyOS5OepryvQ8YJa7G/+ml3560W+rmSYE9KR3FrKUDjgUOVkIx+tZKCe7MjkTWxzrmro8HlhstVPZtzEgd6MntpCck5qI25Rcv0NOXVB8k+iCMMTVj8OWUcxJkwTnvSAnb2wKsHh6QOpRW2misFyrs21rSEEhMbDGKrk8RR9vNWrUY5VU+oHNa6Vb2Uyn6oeodKxSrQjybK/FAdhY9q12sXwBnFO9US3h4h6GotMiR5QxAI+a1PkUKmhUomJ9SsFHtTbTLVp2CrtDfNXXw/4XfW3xGqxQKfXK3T7AdzVmuP4f6Zb2chtJJxdquRIzZBI9xWvHaB0mc/fTLi3USFhgDoK0BMkqFSdwFFv9bJH5ZIGOKZaB4V1m6kEoiVLfgmaY7V/bn8qleFofoDjmmWZFuFYpjvQWvT263EbKR78VafFFgdMtVdpIZkzs3R5BB68g/auZ6hOZJjuzjPGaUsP2Mlou1nLYS2ihWXzG9u1QX2ivcWzM2B8iqppc+y4zuwB3q3Sa/GlmY1Pqx196x43B6CjTWyttoIDEGT9KytZtZk8w4k/Ssp1SB+oXJKTaBSATQsce8f/AJW/klGwx4ouZo0hATiub5PR5rkk9C8QgvgjNT/QrI3K0OZ/LmGCOaODSkAoM/ah5SUg7aQuvLKNRgAZoNbeWBt0TYFO3hkmP8wAD3pbdI6Sbf6acn+mRyemRefcbhvyR2ot2DBduNxA2/nWJAwhLOh2nqO/3FPNA8F6rraRTWyqFVuHJ9JXP/us8akEmn0V26hbBxgjJA/b/apfDdtc3eqW9jHGd0z4B+3Jq/H+GOsIyBZoGXPOatHhjwXNo0rXV35ck4GE2dFFNxYuAcHJDzTrWGws44IhtRAAP+a3m82dHSIgMQfV2FRyLPNMIBGyrn8RGAKKYpBHtXOB3H9Rp7YxIriaVZaLEhSGK4uOplm5APwvStF1a6vLnY59A7kcD7Cob+4a4uiZFIwcBamV4YYmuLhgkUalnY9FUdalcZSl2WpxhHrYp8RrFO0ds3P/AHH+/Qfpn+9V658P2s2Dt7VB/qOO+vppzwJHJUey9h/aj5tWgityxYA4raQu77KFr9qunTlYjjn3oBZWmxls1mvXv1d65ySM0HCzA5Haj46Et7DHiO48VlRmck5NZWUcXdLESzAzOFXuScUyawsJcW9tKjPjselc/vbi8uZTH5jD2FEabbX1pexyiUq/c57VNCMYexV44rY51nQXtiJAMKDyB3rLOX+WI0xkds00uruR4RE8gcEUtktIFjMjH1fFBkkpMR5YSPHmZSd4OzuBQ80fR8homI9YHQ9qPtlhmiAXBPsxP+frUkVmPPAJY7sBo2GVf44rV/GzlFM08O6fe6xqkGnqh5fEjr/Rjk5/tXetKsYdLsIrOBfRGoWkfhXSLfRLXcQPqJgNxJ5wBwDTprtSSG/aqsceKHwx8VYTJMF5Y8VANQjMnljr+9DXDl0Owc471yPxY2uDWml+mnIRx5RVyMDvjHXtVKDUeTOztcpzyKVXswS2lKn1dqFtPqfpYTcsTI0ak5XBzjnP50FdXi28ck1ycInLZ/2rJKjE6BoLZgxeb1MTk5qlfxC1tZ7U6ZYNuh3ZuJF6Ng8KPjI5P2qPxBrOoahcssMjR2zHAiHGfv70CNNLRZnPGOlTSzJaR3lc3SKWtw6ybU3DFGedJOBEXbnrTG509d7eUnfrQ9pbNDKTIuea7nFoGWRx7Fs9kwOeamtbJjblifV7e9WC3WGVWDDH3rJI0TKRkYPb2rFktaMjmi2VEq2TwetZVgOnKSTWUfJB8o/pJbTxTzv5kJMrDdkdqOm0qKKwF6twxJOMA15atB9Wz4EbA7R9q9dbdop4Hu2XnKLnjNQStOyeLjk0tBWlWouJwrg4x1zR97FDBIEXaTjkUrtHNvbGJXO8/wBVCSW10rCeSfkng7Nx/wCKWouapMzxLld6GJALjy7dST3LHj+xFOvD1oh1qzaWKLHmgkgn/k0Haxv9KGmgLMB6WOD+ftUkFxPZut06gupBjjHP/wBj7/bpTYShB0+zUy4+Lbz6rUo9MW6mtgE3SvEF3EZGMZ4HXrU9tqASRIYzK6IMBpX3MfuarfiRWurqLVraZ13oACMcA9QR0rNIufM2ib0MBw46NVMMkbPQe4qi+C5RSrjoe+aJCxTgPhD3BqtF3dMIV3cfnRlnckAZyc/pVcZCGh4VBGDgiqX/ABJHk6VE8UgQebyndqt0ModSBSLxfYT3lggt4DMUYnaoyaLJuDEStbOYW0fAkabOecVpeaj9LJscFlb24rDYzwXDCaN4/V+FsjFNk02xvIQ8zAMO2a8lZ4J8GgIOVcrAAQYlfGAw71C6QoN/BHzWupX8VuWtEOQvTPahbaQOpDE4Pc0PklekdU5umeu8aglcVn8sgNu5xUhsJEy23K9q1nsZEh80gge1UQqrM4qOjdE3KDmsr2wu7fyMSDLAkGspTztPoXTItMtGvA5IyMdaLg0YyMY/ORZMenzOM0v0PWLzTkcrAkuVxtI6Vvcz316sd28TLCWxnPC1soJRtbGRTjLZNdGexfF1B6BxvUZFbre/URiBUBDDgN/n705t9etrWzKXUSTgD/p9S3zmqxqd7Dc36mzt/K3f9sV2PHaTN+t/QZw3lxHF9OJR5vUZHpH2FRPLeb44gXmnJxkc55quajdXMN6shDrgYxjtVr8Js+oarbpFLs2+ok9xWPDb+3sKSkqv2dOs9HVdEiguFUysm5uOAfaqjdWslpKVCkIpyBXQ3ztUr1xSLU7Hz974yV5+9Hkir0XYnSoQQXNysYO0tlc5/OnVncPKQzIc7QT96BiiYAJ0yckimmkgEumeVOMkdaoxI6bG1ru49J5prCOMmgLVivBOcUckmKuiSSINR0my1KLZdwq+Pwt0ZT8GqBrXhiXRbhriEGe1Y8ADJX710Yvtb71k0STRlHGUYYIpWb4+PLtrYta6OEavJaTXaIISHPU470bY6abiyk8ocoePmmPifw1/8VqLzROzxyksue3xWukXaWcXlSMPVXlZlUqkg8a5N7Fu26kgCBSrIevvTGxtZb7akwG0cEUctzapJtO1g3I+K1kMBlU2z498GkLJJKhiwtpoOs9EsbeHYYFzkk8VlercFVABfFeUpxiK/wCef6cxsi167rZsSygk7OwqeO9k08rFf2/1UDc7SSMU+AhtmSKJItzeliBjaPmpL02Mkce6MNHH+EkDk+471ZHPGMqpio32loT2arK2ItqGR/SsvZTWWdhPHrqJKYpYn4EqH8HxQWqX9pFdwtY4XC/9QnGGyeg9qnhvPOMbEkurAlgeGqzGnJWPjG9livNDt5HGctnjJFD+FbVrbxPHaWqFtpyxzgAU0a/FyEY+n2GOv2NTaLBFBqrXilt0pxw3WmtWHM6A7be+cd6DnferZbDe3SpZpSke7HzQUEytvZ+XPAHWpp9j4dGrrGp4XqMA1FZZimZWOcsTRRO3HQk9fio7eLM0oLZGSMe3emY3R0hhC/PAw3Xr1o5SePalyDaFzyQMA0XG2E+1WRJpBRG4YPTHWtI5CjbSScVqs42E4zxzUQm54H50dgFX/iUZU0yN4VyQ/GO1c23SFllILH/xrsHieJbjRbglQSilhk4wa5baNElyokYM2N2BXmfPhtSBVchra/SvaK8wVZtvv0r3TruySRnYqzp/TnrSHV3AjfynI3Hdn4qDS4UEIvS24DgqTzUHjTdooTlNcX2W7/UkLDPlKPisqpTwK0m5JQqtyBnpWUPgkH4ZB3iSbTbZlhubKRDIDte2uMKw/Yfaq/o/iR9OgFsbfzYQSRzyKMjv4768u4rtY41kc4QjKj2yOh+45oC60+3VylrGGZcllVmLLj49q9eMUhCxxapgkU9rcXm6SJzljtRk3Zz74pnbWVtb7mXXLKOQnPlOpGPg5ORS6IS27m7hOM+lQfxE/brWmp213JJELqJ4JWG4M46g0SVLQXGumH+ZNcXki3N02yIZLxHcM9iPinnhma8/1NaW08zACPecHIYdqqkUE9i8cqkyAc4xx9s+1OvC7NP4ihkIUTl8DCkDb8UNyujItuX9HX9UulSIZBx70vtLxSokQdOTn/et/ETmC0yxyVHBqm2msjMiocKzY6/rU8n9iqK0XuW5RFWMsokf+nOcDufzqCC6YzyKwBAPBH+fakFteQvtkZhwuSSep9qPtrpZbgiPBRxyQetHB2cyyQS+YpAzkdOaPhO5FOOaT24LZ2nkYx800tXbbye/NXRJpHrsVc+1YCmNwPI9q2uSAu7+4oPzAr4HQ84ogCe+Rp9Kuo0UMzRsAD34r58nuby2vZYfp5I2DFeFyK7xql59Lps0nfaQK4brFzfXN+x095JPV0H9JpWZKSpmxq9h1raSzW6tcMygdWYVFdWE7RZglPkZ6igVTVxNHFc3jorgk+wom2uL6zl8m6l823b0hh2qZ44pWkNSSdo2fSEbBF5kY/8AKsrHZ0chVicdia9rg7YJJZNbHbZysVZCweMFkI9m9q9stRvrXZeSWe3YwAlb0k59/itjBcWuLhFdoXO1GVvQwI7Hvn5rXyry2ihvJNwhmLKke4jCr3Knt2yK6DfTAplgv4bjW4fPtrm3i8tMBUXcTnnORVTuEukk2H+aY+CofnHxUz3oeUmIPAr43ENv5Ht0/wAFMV06GeV7qKKZ7d1JDIw3Jgc5BI4wK5Pj2Yk4/wCGWuoWdra/Tyw5UnZtMfLHqT+1WPwg9guvwyPOEiSEuiuuQM+x7CoNH0S1u7d9Q129jg09CMRrEDLKCQM88qM8e/eofF13axapImjoIYV24MbhVCYAwcduDxQyc1TRijTstPj3UFNsUQ8n5rn1rBcC3MrqQhPB6ZrV9cjkiEU0bXAU/jLt+1RT3c1++6NmVD0TGMD7UKt+h0ZBMV/JG5UyYjHFPvDtzK93EiNl9vHsMmqHdyPA678gHpnvVq/h5chtcQSPj0YTPck4/bNHGNOzmzqWmykyEN+LByfmmdvJyTjHxQtrYLC5ZWznJP3qfUpFtNOmmxyo/vVsSeRBcX+6YKv2ryNiJRnG0jjNKbQklJW4yc4Psan1HVLewi3zuOBkDv8AlRdgvQu/iBq8Nhpvkk7mY8qDnFc4t5be4kkuoEe3kxjGP1pxqmoanr15cNa3PlRRq3LKvqGOg4yar8dxLeIYbi9uDAcAKoVQR896TkpjY6WySZUkkVpZJ2c8epD0o83FgymN4pHwApI9LDHel13q2oxnYl1ceXEvp8xF4HQc4rZdYvr1U8poPSg3GVVOf0FZSrR2mEyXtlvIS3IUdAc1lCPf30TbTHaH5EAIryu4r9N4lhef6iRrSSKL6f6Iv5YXA3KBg/7fY0z+nS41Ke2YsqWMapEVPJGM8+/NZWVJJ1DQ+qRX9Y022XR5L/aWncKST05HsKZ+Do1GmRlvW0r8l/VjDY4z04FZWVk3cWKlqhlqGlW9/JHHdtI6LCHIBC7se+APf9K51PcvcapcBlRVGRtVeMAcDBrKys+PuOxjRtcWMTajbwK8kccqliEbocdqGs5XidSh5KHmsrKfLoH0O5dPgl0uyvX3GcwMNxOehNKPBsjt4p0wl2y04yc/evKytx9An0ciLtXjtQuvgC1tx2Z+R71lZVOPoTk6EviWQ2ujPPEq+ZGF2kiuQ6vq13qU8AuX/DJtG3I4NZWUeTR0Ngkt7NY36yQMAUOQCOOKeazfGyS1e2t7dPOjWVhs43Hrjn5r2sqX8HtaN5JxdaLNI8EIKR5AVeOvzSGKGOQDKAYA6fbNeVlDhbbkLgMIox5Sctjb715WVldbNbP/2Q=="
         },
         "courseTitle": "Advanced Python Programming",
         "purchaseDate": "2024-12-20T11:03:42.931Z"
@@ -203,8 +209,8 @@ export const dummyStudentEnrolled = [
     {
         "student": {
             "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "name": "GreatStack",
-            "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
+            "name": "Pallavi Verma",
+            "imageUrl": "https://images.pexels.com/photos/326900/pexels-photo-326900.jpeg?cs=srgb&dl=pexels-pixabay-326900.jpg&fm=jpg"
         },
         "courseTitle": "Web Development Bootcamp",
         "purchaseDate": "2024-12-20T11:04:48.798Z"
